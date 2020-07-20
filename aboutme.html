@@ -1,0 +1,180 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aboutme</title>
+</head>
+<style>
+.banner{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.slider{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+#slideImg{
+    width: 100%;
+    height: 100%;
+}
+ .overlay{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    position: absolute;
+    top: 0;
+} 
+
+</style>
+<body>
+
+    <div class="banner">
+        <div class="slider">
+            <img src="C:\workspaces\webclient_workspaces\01_html\wonhyukcho_miniproject\wh3.jpg" id="slideImg">
+        </div>
+        <div class="overlay">
+
+        </div>
+     </div>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;1,700&display=swap');
+.body{
+    
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    width: 100%;
+ 
+  
+}
+.container{
+     height: 100vh; 
+    width: 100%;
+    background-image: url("wh1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 1s;
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+    position: relative;
+    overflow: hidden;
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite ;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+
+}
+#won{
+   
+    background-color: rgba(255, 255, 255, 0.39);    
+    padding: 5px;    
+    margin:1px;    
+   border: 1x solid;
+    text-align: center;
+    font-size: 19px;   
+     font-family:'Titillium Web', sans-serif; 
+   
+}
+
+h2{
+    font-size: 22px;
+    
+     font-family:'Titillium Web', sans-serif; 
+}
+ pre{
+    text-align: left;
+} 
+/* .overlay{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    position: absolute;
+    top: 0;
+}  */
+@keyframes animate{
+    0%{
+        background-image: url("wh2.jpg");
+    }
+    20%{
+        background-image: url("wh3.jpg");
+    }
+    40%{
+        background-image: url("wh4.jpg");
+    }80%{
+        background-image: url("wh5.jpg");
+    }100%{
+        background-image: url("wh1.jpg");
+    }
+}
+
+</style>
+<body>
+
+    <div class="container">
+        <fieldset id="won">
+            <h2>조원혁/Wonhyuk Cho</h2>
+            <body>
+                <pre>                
+                        1990년 9월 17일 나라 "조" 원할 "원" 빛날 "혁" 이라는 큰뜻을 가지고 태어난 조원혁이라고합니다
+                    지금까지 이름에 걸맞게 행동하고 많이 배풀었는지 에대해서 는 의문이있지만 제가 하고자 하는일에는 
+                    항상 최선을 다한것같습니다. 강원도 강릉이라는 정이깊은 도시에서 유년시절을 보냈고
+                    사랑이라는 단어, 행복의 의미, 솔직함이라는 참뜻을 가르쳐준 부모님 과 4살 많은 누나 가 항상 올바른 
+                    길을 갈수 있도록 지도 해주었기에 그누구보다 유복하게 자란것같습니다. 철없고 개구쟁이였던 저에게 
+                    더큰세상에서 빛을 비추는 사람이 되라고 중학생때 캐나다로 유학을 다녀왔습니다. 
+                    그곳에서 솔직함과 당당함, 자신감 을 배웠고 GeorgeBrown에서 대학졸업후(Certificate of Degree Hotel Management)
+                    멀티 컬쳐 속에서 인정 받는 사람이 되고자 많이 노력한것같습니다. 재학중 무엇을 하고자 하는지 크게 꺠닫고 부지런히
+                    해서 주변에 부러움을 쌓는 회사에 취직하여 승승장구 하는 길을 걸었던것같습니다. 
+                    일을하면서 서비스라는 단어가 얼마나 어렵고,
+                    아릅답다는 것을 배웠고, 욕심이 생겨서 소믈리에 자격증, 푸드써비스 자격증, 스마트 서버자격증, redseal 자격증 등 
+                    많은 스팩을 쌓았습니다.
+                    큰 길을 걷는중 욕심 혹은 새로운 목표가 생겼고 한국에 귀국하여 KH정보교육원에 softengineer program 
+                    이라는 접하지 못하였던 것을 배우게되었습니다.
+                    그곳에서 똑똑한 친구들, 부지런한 친구들, 긍정적인 친구들과 학생 한명한명에게 더 발전을 할수있도록
+                    길을 찾아주시는 강사님 속에서 접하지 못했던 경험을 하고 다시한번 성장한것 같습니다. 
+                    자바 라는 언어를 통해  컴퓨터와 의사 소통 하고 표현 하는법을 배웠습니다. 그것으로 인해 
+                    내가 생각하고 내가 표현하고자 하는것을 구현할수있다는 것에서 매력을 얻었습니다 그리고 데이터 베이스라는
+                    자료구조화 하여 효율적으로 시스템관리 할수있는 응용 프로그램 역시 인상깊었습니다. 마지막으로 좋은 글소개로 
+                    저의 소개를 마치도 하겠습니다.   
+                         NYC is 3hours ahead of California but that doesnt make California slow
+                    Someone graduated at the age of 22 but waited 5years before securing a good job.
+                    Someone bacame a CEO at 25 and died at 50. While another became a CEO at 50, and lived to 90years.
+                    Someone is still single while someone else got married.
+                    Obama retired at 55 and Trump started at 70. Everyone in this world based on their time zone
+                    People around you might seen to be ahead of you and some might seen to be behind you
+                    But everone is running their own race, in their own time. Do not envy them and do not mock them.
+                    They are in their time zone and you are in yours. Life is about waiting for the right moment to act
+                    so relax! 다들 최선을 다하고있겠지만 조금만 더 힘내서 좋은 결과를 가져 올수있는 날이 있도록 
+                    저포함하여 모두에게 응원 합니다!   조원혁               
+
+    
+                
+
+                </pre>
+            </body>
+           
+         
+        </fieldset>
+       
+         
+    </div>
+    
+</body>
+</html>

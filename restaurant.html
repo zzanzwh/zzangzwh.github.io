@@ -1,0 +1,255 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;1,700&display=swap');
+
+:root{
+  
+    --main-font:'Titillium Web', sans-serif;
+    --secondary-font : 'herr von muellerhoff',cursive;
+    --body-font : #252525;
+    --secondary-font-color : #c59d5f;
+    --body-font-color: #515151;
+}
+
+html{
+    font-family:var(--body-font);
+    font-size: 10px; 
+    color: var(--body-font-color);
+    scroll-behavior: smooth;
+      
+}
+
+section{
+    padding: 3.9rem 0; 
+
+}
+img{
+    width: 100%;
+    max-width: 100%;
+
+}
+a{
+    text-decoration: none;
+}
+p {
+    font-size: 1.6rem;
+}
+.container{
+    width: 100%;
+    max-width: 122.5rem;
+    margin: 0 auto;
+    padding: 0 2.4rem;
+}
+
+    </style>
+
+</head>
+<body>
+    
+    <header>
+
+        <div class="container">
+                <nav class="nav">
+                    <div class="menu-toggle">
+
+                       <i class="fas fas-bar"></i>
+                       <i class="fas fas-times"></i>
+                    </div>
+                    <a href="index.html" class="logo"> <img src="" alt=""></a>
+                    <ul class="nav-list">
+
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">reservation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">logIn</a>
+                        </li>
+                    </ul>
+                </nav>            
+        </div>
+
+    </header>
+    header ends-->
+    <!-- <section class="hero" id="hero">
+        <div class="container">
+
+            <h2 class="sub-headline">
+
+                <span class="first-letter">W</span>elcome
+            </h2>
+            <h1 class="headline">The Vino</h1>
+            <div class="headline-description">
+                <div class="separator">
+                   <div class="line line-left"> </div>
+                    <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    <div class="line line-right"></div>
+                   </div>
+
+                   <div class="single-animation">
+                    <h5>Ready to be opened</h5>
+                    <a href="#" class="btn ctn-btn"></a>
+                   </div>
+
+               
+ 
+            </div>
+        </div>
+
+    </section>
+
+    <script src="main.js"></script>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;1,700&display=swap');
+
+        body{
+             font-size: 20px;   
+             font-family:'Titillium Web', sans-serif; 
+             background-image:url('backgroundR.jpg');
+             background-size: cover;
+            background: linear-gradient(rgba(0, 0, 0, 0.9));
+            position: relative;
+            z-index: 1;
+            opacity: 1;
+
+           
+        }
+        .box{
+            width: 800px;
+            float: right;
+            border: 1px black;
+
+        }
+        .box ul li{
+            list-style: none;
+            width: 120px;
+            float: left;
+            margin: 10px auto;
+            text-align: center;
+        }
+        .box ul li a{
+            text-decoration: none;
+            color:  #33de60;
+           }
+           .box ul li:hover{
+               background-color: #33de60;
+           }
+           .box ul li a:hover{
+               color :red;
+               font-size: 30px;
+               text-transform: uppercase;
+           }
+           .welcome{
+               width: 400px;
+               height: 550px;
+               opacity: 0,9;
+               padding: 5 5px;
+
+           }
+           .welcome h4{
+               text-align: right;
+               text-transform: uppercase;
+               font-weight: 300px;
+               font-size: 80px;
+               color: transparent;
+               -webkit-text-stroke: 4px;
+               animation: back 15s linear infinite;
+               background: url('restaurant3.jpg');
+               -webkit-background-clip: text;
+
+           }
+           /* .welcome h4:hover{
+               color: yellowgreen;
+               text-align: right;
+               text-transform: uppercase;
+               font-size: 60px;
+               
+
+           } */
+            #pa{
+                font-size: 22px;
+                color: white;
+            
+           }
+           @keyframes back{
+               100%{
+                   background-position: 2000px 0;
+               }
+           }
+        
+
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <ul >
+            <li><a href="restaurant.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="regiser.html">Login</a></li>
+  
+            <li><a href="aboutme.html">Wonhyuk</a></li>
+           
+
+        </ul>
+
+    </div>
+
+    <div class="welcome">
+
+        <h4>The Vino</h4>
+        <p id="pa">
+            <strong>The Vino</strong>  is establisehd in <strong>2020. 07.09</strong>
+            <br>
+            by Wonhyuk Cho <br>
+            <strong>The Vino </strong> is typical Western-Asian Cusine and
+            provide Seasonal menu. <br>
+            
+            
+            <br>
+            <em> Operation Time</em> <br>
+             Lunch :   11:00 ~ 2:00 <br> 
+             Dinner  : 17:00 ~ 21:00      
+            <br>
+            <br>           
+            
+             <mark>Location : Seoul,Gangnam </Mark>
+           
+
+
+        </p>
+    
+        
+
+    </div>
+
+
+
+</body>
+</html>

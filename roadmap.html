@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D image roadmap</title>
+</head>
+<style>
+.slidshow{
+    margin: 0 auto;
+    padding-top: 50px;
+    height : 750px;
+   
+    background-image: url('roadmap2.png');
+    background-size: cover;
+    box-sizing: border-box;
+}
+.content{
+    margin: auto;
+    width: 300px;
+    perspective: 1000px;
+    position: relative;
+    padding-top: 40px;
+     
+}
+.content-carrousel{
+   
+    width: 100%;
+    position: absolute; 
+    float: right;
+    animation: rotar 15s infinite linear;
+    transform-style: preserve-3d;
+}
+.content-carrousel:hover{
+   
+    cursor: pointer;
+    animation-play-state: paused; 
+
+
+}
+.content-carrousel figure{
+    width: 100%;
+    height: 360px;
+    border: 1px solid #4d444d;
+    overflow: hidden;
+    position: absolute; 
+        
+
+}
+
+.content-carrousel figure:nth-child(1){
+    transform: rotateY(0deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(2){
+    transform: rotateY(60deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(3){
+    transform: rotateY(120deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(4){
+    transform: rotateY(180deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(5){
+    transform: rotateY(240deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(6){
+    transform: rotateY(300deg) translateZ(300px);
+}
+.shadow{
+    position: absolute;
+    box-shadow: 20px 20px 20px #000;
+    border-radius: 20px;
+
+}
+.content-carrousel img{
+     image-rendering: auto; 
+    transition: all 1300ms;
+     width: 100%;
+    height: 70%; 
+  
+
+}
+.content-carrousel img:hover{
+  
+    transform: scale(1.2);
+    transition: all 1000ms;
+}
+@keyframes rotar{
+    from{
+        transform: rotateY(360deg);
+    }to{
+        transform: rotateY(0deg);
+    }
+}
+html{
+    color: white;
+}
+
+</style>
+
+<body>
+    
+    <section class="slidshow">
+        <div class="content">
+            <div class="content-carrousel">
+                <figure class="shadow"> <img src="sample/image/kh.jpg"alt="" id="img1"> 
+                    <p>1.현재의 신분 프로그랭을 배우는 학생으로써 Backend 와 Frontend를 완벽하게 도달하지 못하였기에 KH정보교육원 과정을 완벽하게 마치고싶다</p> 
+                </figure>
+                <figure class="shadow"> <img src="sample/image/newwork.jpg"alt="" id="img2"> 
+                    <p>2.KH정보교육원 수류식후 첫 직장은 웹서비스 /자바 기반으로 하는 회사에서 많이 배우고 나의 것으로 만들며 필요한 자격증들을 취득할것이다 </p> 
+                </figure>
+                <figure class="shadow"> <img src="sample/image/promote.jpg"alt="" id="img3"> 
+                    <p>3.승진/외국기업 계열/해외/ 로 이직혹은 승진 준비하며 C,C++,HTML,JAVASCRIPT,JAVA 등 더완벽하게 구현하기위해 공부할 것이다 </p> 
+                </figure>
+                <figure class="shadow"> <img src="sample/image/study.jpg"alt="" id="img4"> 
+                    <p>4.기회가 된다면 해외/국내 컴퓨터 사이언스 석사과정을 들어가 알고리즘/자료구조/엠비드/AI 등 배우고 수료하고싶다</p> 
+                </figure>
+                <figure class="shadow"> <img src="sample/image/fa.jpg" alt="" id="img5"> 
+                    <p>5. 석사과정 과 경력으로 Google/Amazon/Facebook/Microsoft/Apple 와같은 큰 기업에 들어가고위해 더 완벽하게 마스터할것이다 </p> 
+                </figure>
+                <figure class="shadow"> <img src="sample/image/company.jpg"alt="" id="img6"> 
+                    <p>6.앱/AI/웹/엠비드 등 기반으로 나의 이름이 걸린 회사를 오픈하는게 마지막 꿈이다 </p> 
+                </figure>
+
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+    <script>
+
+    document.querySelector('#img1').addEventListener('click', () => {
+        this.location.href = 'https://hackernoon.com/the-2019-web-developer-roadmap-ab89ac3c380e';
+        });
+    document.querySelector('#img2').addEventListener('click', () => {
+        this.location.href = 'https://wangin9.tistory.com/entry/%EC%8B%A0%EC%9E%85-%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A1%9C%EC%84%9C%EC%9D%98-%EC%B7%A8%EC%97%85%EC%9D%84-%EC%A4%80%EB%B9%84%ED%95%98%EB%A9%B0-%EB%8A%90%EB%82%80-%EA%B2%83%EB%93%A4-part1';
+        });
+    document.querySelector('#img3').addEventListener('click', () => {
+        this.location.href = 'https://sdtimes.com/devexec/10-things-that-change-when-a-developer-gets-promoted/';
+        });
+    document.querySelector('#img4').addEventListener('click', () => {
+        this.location.href = 'https://brunch.co.kr/@maengdev/8';
+        });
+    document.querySelector('#img5').addEventListener('click', () => {
+        this.location.href = 'https://medium.com/swlh/how-to-get-hired-at-uber-google-amazon-linkedin-microsoft-facebook-etc-4f5a2f159c25';
+        });
+    document.querySelector('#img6').addEventListener('click', () => {
+        this.location.href = 'https://dev200ok.blogspot.com/2020/04/ios-ios-developer-roadmap.html';
+        });
+
+
+    </script>
+</body>
+</html>

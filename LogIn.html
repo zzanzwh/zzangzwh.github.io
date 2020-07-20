@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.5.1.js"></script>
+
+</head>
+<body>
+        
+</body>
+</html><!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Document</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;1,700&display=swap');
+
+    body{
+        background-image: url('loginR.jpg');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    html{        
+        font-size: 15px;
+        font-family:'Titillium Web', sans-serif; 
+    }
+    form {
+    
+    background-color: #187986;    
+    border-radius: 200px;    
+    padding: 15px;    
+    width: 400px;  
+    text-align: center;  
+    align-items: center;
+    justify-content: center;
+    
+    }
+    
+    fieldset{    
+    border: 0;    
+    }
+    
+    ol {   
+    margin: 0;    
+    padding: 0;    
+    }
+    
+    ol>li {    
+    list-style:none;    
+    border: 1px solid #ffffff;    
+    border-radius: 10px;    
+    background-color: rgba(255, 255, 255, 0.39);    
+    padding: 5px;    
+    margin:1px;    
+    height: 30px;    
+    }
+     a{
+    border: 1px solid #ffffff;    
+    border-radius: 10px;    
+    background-color: rgba(255, 255, 255, 0.39);    
+    padding: 5px;    
+    margin:1px;    
+    height: 30px;   
+    }
+     
+    label {    
+    width: 150px;    
+    margin-left: 10px;    
+    float: left;    
+    }
+    
+    #submit_btn  {    
+    width: 80px;    
+    height: 30px;    
+    border: 0;    
+    color: white;    
+    background-color: #3b686e;    
+    border-radius: 30px;    
+    }
+    h1 a{
+        color: #187986;
+    }
+    
+    </style>
+
+</head>
+<body>
+<h1>Sign-up</h1>
+<form action="">
+<fieldset>
+
+<ol>
+<li>
+<label for="id">아이디</label>
+<input type="text" name="id" id="id1">
+</li>
+<li>
+<label for="password">비밀번호</label>
+<input type="password" name="password" id="pwd1">
+</li>
+<li>
+<label for="chkpwd">비밀번호 확인</label>
+<input type="password" name="chkpwd" id="pwd2">
+</li>
+
+<li>
+
+<label for="grade">집주소</label>
+
+<input type="text" name="grade" placeholder="ex)서울시 관악구" id="address1">
+
+</li>
+
+</ol>
+
+</fieldset>
+
+<fieldset>
+<ol>
+<li>
+<label for="name">이름</label>
+
+<input type="text" name="name" placeholder="5자미만 공백없이" id="name1">
+</li>
+<li>
+<label for="email">메일 주소</label>
+<input type="email" name="email" placeholder="hi@gmail.com" id="email1">
+</li>
+
+<li>
+<label for="phone">연락처</label>
+<input type="phone" name="phone" placeholder="01012341234" id="phone1">
+</li>
+</ol>
+</fieldset>
+<fieldset>
+<input type="button" value="저장" id="submit_btn"  onclick="saveMem();">
+
+    <a href="wonhyukcho.html" type="button" class="cta">뒤로가기</a>
+
+
+
+</fieldset>
+
+</form>
+
+</body>
+
+
+<script>
+
+    function saveMemo(){
+        var entry ={
+            ID : $("#id1").val(),
+            password : $("#pwd1").val(),
+            cPassword : $("#pwd2").val(),
+            address : $("#address1").val(),
+            name : $("#name1").val(),
+            mail : $("#email1").val(),
+            phone : $("#phone1").val(),
+            date : Date.now()
+
+        };
+        console.log(entry);
+        var entryList = JSON.parse(localStorage.getItem("entryList"));
+        console.log(entryList);
+             if(entryList == null) entryList = [];
+
+     entryList.push(entry);//js
+     var jsonStr = JSON.stringify(entryList);//json
+     localStorage.setItem("entryList", jsonStr);//json
+
+    }
+
+// <h2>방명록 저장</h2>
+//   <input type="text" id="guest" placeholder="방문자 성함">
+//   <input type="text" id="memo" placeholder="메모">
+//   <input type="button" value="저장" onclick="saveMemo();">
+//   <script>
+//   function saveMemo(){
+//     var entry = {
+//       guest: $("#guest").val(),
+//       memo: $("#memo").val(),
+//       date: Date.now()
+//     };
+//     console.log(entry);
+
+//     //배열생성
+//     var entryList = JSON.parse(localStorage.getItem("entryList"));
+//     console.log(entryList);
+
+//     //첫방명록인경우
+//     if(entryList == null) entryList = [];
+
+//     entryList.push(entry);//js
+//     var jsonStr = JSON.stringify(entryList);//json
+//     localStorage.setItem("entryList", jsonStr);//json
+
+
+// </script>
+
+</html>​
+

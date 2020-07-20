@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.5.1.js"></script>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;1,700&display=swap');
+
+   
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+    background-image: url("contact.jpg");
+    background-size: cover;
+}
+.contact{
+  
+    background-size: cover;
+    padding: 60px 0;
+}
+.contact h1{
+               text-align: center;
+               text-transform: uppercase;
+               font-weight: 300px;
+               font-size: 80px ;
+               color: transparent;
+               -webkit-text-stroke: 4px;
+               animation: back 15s linear infinite;
+               background: url('contact3.jpg');
+               -webkit-background-clip: text;
+    
+}
+.contact-form{
+    max-width: 600px;
+
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 50px;
+    background-color:#cb97235c;
+    
+}
+.contact-form-text{
+    
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    background: #dfbf3cc4;
+
+
+    margin: 16px 0;
+    border: 1px solid;
+    padding: 15px 40px;
+    outline: none;
+    transition: 0.5s;
+     
+} 
+.contact-form-text:focus{
+    box-shadow: 0 0 15px 10px black;
+}
+textarea.contact-form-text{
+    resize: none;
+    height: 120px;
+}
+.contact-form-btn{
+
+    border: 1px solid;
+    background: #b69a294f;
+    padding: 12px 50px;
+    border-radius: 80px;
+    cursor: pointer;
+    transition: 0.5s;
+
+
+}
+.contact-form-btn:hover{
+ background: orange;
+ box-shadow: 0 0 15px 10px rgb(20, 9, 9);
+}
+@keyframes back{
+               100%{
+                   background-position: 2000px 0;
+               }
+           }
+
+</style>
+
+<body>
+
+    <div class="contact">
+
+        <h1>Contact to the Vino</h1>
+        <form class="contact-form" action="mailto:zzangzwh@hotmail.com" method="POST" enctype="text/plain">
+
+        <input type="text" name="name" class="contact-form-text" id="name" placeholder="Your name">
+        <input type="email" name="email"  id ="email"  class="contact-form-text" placeholder="Your Email">
+        <input type="text" name ="phone" id="phone" class="contact-form-text" placeholder="Your Phone">
+        <textarea class="contact-form-text" name="message" placeholder="Your Message"></textarea>
+        
+        <input type="submit" class="contact-form-btn" value="Send Message" onclick="printValue();">
+    </form>
+    </div>
+
+
+    <script type="text/javascript">
+
+
+    function printValue(){
+        // mailto:zzangzwh@hotmail.com
+   
+        var cName =document.getElementsByTagName("input");
+        var userName = cName[0].value;
+        var cEmail = document.getElementById("email").value;
+        var cPhone = document.getElementsByName("phone");
+        var phone = cPhone[0].value;
+        var eMessage = document.getElementsByName("message");
+        var message = eMessage[0].value
+
+        alert(userName + "\n"+ cEmail +"\n" + phone +"\n "+ message + " \n 메세지를 보내고싶나요?");
+        // alert(cEmail);
+        // alert(phone);
+        // alert(message);
+
+
+			//var nameTF = document.getElementsByTagName("input");
+
+
+           
+
+
+    //         $.ajax({
+    //   type: 'POST',
+    //   url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+    //   data: {
+    //     'key': 'YOUR API KEY HERE',
+    //     'message': {
+    //       'from_email': 'zzangzwh1@gmail.com',
+    //       'to': [
+    //           {
+    //             'email': 'RECIPIENT@EMAIL.HERE',
+    //             'name': 'RECIPIENT NAME (OPTIONAL)',
+    //             'type': 'to'
+    //           }
+    //         ],
+    //       'autotext': 'true',
+    //       'subject': 'YOUR SUBJECT HERE!',
+    //       'html': 'YOUR EMAIL CONTENT HERE! YOU CAN USE HTML!'
+    //     }
+      }
+     
+
+    </script>
+    
+</body>
+</html>
